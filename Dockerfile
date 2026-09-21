@@ -5,6 +5,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY fizzbuzz.py app.py ./
+COPY src/fizzbuzz.py src/app.py ./
 
 CMD ["python", "app.py"]
