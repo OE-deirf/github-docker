@@ -1,4 +1,4 @@
-name: Teszt + Docker build and push (GHCR)
+name: Test + Docker build and push (GHCR)
 
 on:
   push:
