@@ -1,1 +1,1 @@
-# github-dcoker
+# Simple docker in github demo
