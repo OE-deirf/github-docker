@@ -1,0 +1,13 @@
+services:
+  fizzbuzz:
+    image: ghcr.io/oe-deirf/github-docker:latest
+    container_name: fizzbuzz
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: json-file
+      options:
+        max-size: "1m"
+        max-file: "3"
+#   pull_policy: always
