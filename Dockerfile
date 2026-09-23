@@ -5,6 +5,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY src/fizzbuzz.py src/app.py ./
-
-CMD ["python", "app.py"]
+COPY src/fizzbuzz/ ./fizzbuzz/
+COPY src/demo.py src/demo.py ./
+CMD ["python", "-m", "fizzbuzz"]
