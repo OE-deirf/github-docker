@@ -1,3 +1,6 @@
+import time
 from .core import main
 
-main()
+while True:
+    main()
+    time.sleep(10)
