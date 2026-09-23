@@ -18,10 +18,10 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - run: pip install -r requirements.txt
+      - run: pip install -r requirements_dev.txt
       - run: pytest -v
-      - run: coverage run -m pytest -v
-      - run: coverage report -m
+      - run: coverage run -m pytest
+      - run: coverage report -m --fail-under=95
   build-and-push:
     needs: test          # after the test has been finished sucessfuly
     runs-on: ubuntu-latest
