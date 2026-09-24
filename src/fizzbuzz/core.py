@@ -1,6 +1,6 @@
 """FizzBuzz simple implementation"""
 
-LIMIT = 200  # limit
+LIMIT = 100  # limit
 
 
 def fizzbuzz(n: int) -> str:
