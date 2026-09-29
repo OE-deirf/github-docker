@@ -19,5 +19,5 @@ def fizzbuzz_range(limit: int = LIMIT) -> list[str]:
     return [fizzbuzz(i) for i in range(1, limit + 1)]
 
 
-if __name__ == "__main__":
+def main() -> None:
     print(" ".join(fizzbuzz_range()))
